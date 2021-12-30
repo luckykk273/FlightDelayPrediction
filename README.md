@@ -1,7 +1,4 @@
 # Flight Delay Prediction
-
----
-
 ## Introduction
 A flight may delay for some unexpected accident.  
 In these circumstances, a higher amount of claim should be assigned to the high-risk flights and on the other hand a lower amount of claim should be assigned to the low-risk flights.  
@@ -12,7 +9,6 @@ Otherwise, claim amount will equal to $0.
 
 ## Objective
 Use historical data with flight delay claims from 2013/01 to 2016/07 to predict claim amount for the future flights.
-
 
 ## Data Description
 | Field Name | Description |
@@ -27,9 +23,6 @@ Use historical data with flight delay claims from 2013/01 to 2016/07 to predict 
 | is_claim	 | Claim amount, our insurance will pay customer a fixed amount of HK$800 when a delay happens. During your prediction, you can assign any value between $0 to $800 as the expected value of predicted claim amount. Absolute error and Brier error will then be calculated based on the difference between actual claim amount & your predicted claim amount. |
 
 # Environment Setup
-
----
-
 ## Operating System
 We run the whole project on Windows 10.
 
@@ -38,7 +31,6 @@ We run the whole project on Windows 10.
 Please ensure Python is installed before you follow the tutorial in this repository.  
 If someone doesn't know how to install Python, please follow the guide in the official website: [Python Download](https://www.python.org/downloads/)
 In this project, we use Python 3.7.6 to develop.(Highly recommend using Python 3.7.6 with us to prevent from version conflict.)
-
 
 ## Virtual Environment(Optional)
 **NOTE: If someone doesn't want to build the virtual environment, go to step 4 and download this repository directly.**
@@ -61,7 +53,6 @@ And the virtual environment will be activated successfully if there is a prefix 
 
 4. Download this repository to the directory you build the virtual environment before.
 
-
 ## Packages
 Use command ```pip install -r requirements.txt``` to install all needed packages automatically for this project.  
 All packages and corresponded version are listed below:  
@@ -78,9 +69,6 @@ All packages and corresponded version are listed below:
 | Keras | 2.2.5 |
 
 # Project Structures
-
----
-
 FlightDelayPrediction  
 |----data  
 | &nbsp;&nbsp;&nbsp; |----flight_delays_data.csv  
@@ -120,9 +108,6 @@ FlightDelayPrediction
 |----utils.py  
 
 # Examples
-
----
-
 ## Preprocessing Data
 In the beginning, you only have the raw data **./data/flight_delays_data.csv**.
 Execute the following command:  
@@ -146,9 +131,6 @@ You can easily pass two parameters:
 2. model_path: model you want to use to predict;
 
 # Future Work
-
----
- 
 ## How to process time-related variables  
 There are lots of methods to process time-related variables.  
 In our case, we transform time-related variables to periodic-time variables(e.g. day of year) because we assume flight delay is related to some trends in a year.  
