@@ -1,0 +1,8 @@
+scikit-learn==1.0.1
+category-encoders==2.3.0
+matplotlib==3.3.0
+numpy==1.21.4
+pandas==1.1.0
+seaborn==0.10.1
+tensorflow==1.14
+keras==2.2.5
